@@ -9,6 +9,7 @@ Recommendation Systems are used essentially in Spotify! <br>
     - Clustering 
 <hr>
 
+
 ## Understanding the Dataset
 - The Spotify million playlist dataset consists of a single JSON dictionary with three fields:
    * **date** - the date the challenge set was generated. This should be "2018-01-16 08:47:28.198015"
@@ -144,6 +145,10 @@ sns.lineplot(data=df_modified, x = "num_albums", y = "num_followers")
 
 <hr>
 
+## Full project notebooks
+[Project Preparation repo](https://github.com/engmohamedmostafa2021/Spotify-Recommendation-System)
+
+<hr>
 
 ## Recommendations
 - We can improve our content-based recommendation algorithm
@@ -152,7 +157,14 @@ sns.lineplot(data=df_modified, x = "num_albums", y = "num_followers")
 <hr>
 
 ## Deployment
+you can access our app by following this link [Spotify-Recommendation-System-Website](https://spotifyrecsys.herokuapp.com/)
+### Heroku
+We deploy our flask app to [Heroku.com](https://www.heroku.com/). In this way, we can share our app on the internet with others. 
+We prepared the needed files to deploy our app successfully:
+- Procfile: contains run statements for app file and setup.sh.
+- requirements.txt: contains the libraries must be downloaded by Heroku to run app file (app.py)  successfully 
+- model.py: contains the python code of the recommendation system algorithm.
 ### Flask 
-We also create our app by using flask 
+We also create our app by using flask , then deployed it to Heroku . The files of this part are located into (Spotify-Recommendation-System-Website) folder. You can access the app by following this link : [Spotify-Recommendation-System-Website](https://spotifyrecsys.herokuapp.com/)
 
 <hr>
